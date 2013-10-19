@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.*;
 @XmlRootElement
 public class Server {
 
-	//Writing the Annotations to the Attributes is not a good idea, because JAXB uses the getters which leads to double entries 
+	//Writing the Annotations to the Attributes is not a good idea, because JAXB uses the getters which leads to double entries and errors such as "two properties with the same name"
 	private ArrayList<Character> characterLists;
 	private String name;
 	private String ip_adr;
